@@ -1,11 +1,10 @@
 #todas as letras em maiusculo,minusculo,letras aotodo sem espaco, e quantas letras tem o primeiro nome
 nome = str(input('digite seu nome')).strip()
+separa = nome.split()
 print('seu nome em letras maiusculas: {} '.format(nome).upper())
 print('seu nome em letras minusculas: {} '.format(nome).lower())
 print('seu nome tem {} letras'.format(len(nome) - nome.count(' ')))
-print('seu primeiro nome tem {} letras'.format(nome.find(' ')))
-separa = nome.split()
-print('seu primeiro nome: {} '.format(separa[0], len(separa[0])))
+print('seu primeiro nome tem {} letras'.format(len(separa[0])))
 
 # ler uma frase e quantas vezes aparece a letra A, em que posicao aparece pela primeira vez e ultima vez
 
